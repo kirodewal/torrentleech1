@@ -18,15 +18,15 @@ from tobrot.get_cfg import get_config
 
 class Config:
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
+    TG_BOT_TOKEN = get_config("1204748326:AAHznW2mrmALh8UF6C0x4OQIIGnZ6HAVvOI", should_prompt=True)
     # The Telegram API things
-    APP_ID = int(get_config("APP_ID", should_prompt=True))
-    API_HASH = get_config("API_HASH", should_prompt=True)
+    APP_ID = int(get_config("924859", should_prompt=True))
+    API_HASH = get_config("a4c9a18cf4d8cb24062ff6916597f832", should_prompt=True)
     # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
     AUTH_CHANNEL = set(
         int(x) for x in get_config(
-            "AUTH_CHANNEL",
+            "-1001199115006",
             should_prompt=True
         ).split()
     )
@@ -43,7 +43,7 @@ class Config:
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = get_config(
         "DEF_THUMB_NAIL_VID_S",
-        "https://telegra.ph/file/8b973b270f4f380a427b1.png"
+        "https://telegra.ph/file/23a73f126dfabd140cda0.jpg"
     )
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = int(get_config(
